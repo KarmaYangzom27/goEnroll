@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <title>Enrollment</title>
+</head>
+<body>
+    <div class="header">
+        <ul id="menu">
+            <li><a href="student.html">Student</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li style="background-color: rgb(14, 14, 14)"><a href="enroll.html">Enrollment</a></li>
+            <li id="Logout"><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="container1">
+        <h3>Enroll Student</h3>
+        <div>
+            <div class="row">
+                <div class="col-1">
+                    <label>Student ID :</label>
+                </div>
+                <div class="col-2">
+                    <select id="sid"></select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label>Course ID :</label>
+                </div>
+                <div class="col-2">
+                    <select id="cid"></select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <button id="button-enroll" onclick="addEnroll()">Enroll</button>
+            </div>
+        </div>
+    </div>
+    <hr width="65%">
+    <div class="container2">
+        <h3>Enrolled Students</h3>
+        <table id="myTable">
+            <tr>
+                <th>Student ID</th>
+                <th>Course ID</th>
+                <th>Date Enrolled</th>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/enroll.js"></script>
+</body>
+</html>
