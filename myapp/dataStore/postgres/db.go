@@ -10,11 +10,11 @@ import (
 
 // db details
 const (
-	postgres_host     = "localhost"
+	postgres_host     = "dpg-d7tb6fvavr4c738ivmn0-a.singapore-postgres.render.com"
 	postgres_port     = 5432
-	postgres_user     = "postgres"
-	postgres_password = "postgres"
-	postgres_dbname   = "postgres"
+	postgres_user     = "postgres_admin"
+	postgres_password = "rresBEvRCgnwcH8qVIGLIBjftnasvWH0"
+	postgres_dbname   = "my_db_qrnl"
 )
 
 // create pointer variable Db which points to sql driver
@@ -24,7 +24,7 @@ var Db *sql.DB
 func init() {
 	// creating a database connection string
 	db_info := fmt.Sprintf(
-		"host=%s port=%d user=%s password=%s dbname=%s sslmode=disable",
+		"host=%s port=%d user=%s password=%s dbname=%s sslmode=require",
 		postgres_host,
 		postgres_port,
 		postgres_user,
